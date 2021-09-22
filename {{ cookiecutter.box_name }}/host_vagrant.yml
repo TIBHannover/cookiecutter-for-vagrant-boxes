@@ -1,0 +1,18 @@
+all:
+  vars: 
+    boxname: "{{ cookiecutter.box_name }}"   # placeholder
+  children:
+    Vagrant:
+      hosts: 
+        {{ cookiecutter.box_name }}:
+      vars:
+        # vagrant vars for all Vagrant ground hosts
+        ansible_ssh_host: 127.0.0.1
+        ansible_port: 2222
+        ansible_connection: 'local'
+        ansible_ssh_user: 'vagrant'
+        ansible_sudo_password: 'vagrant'
+        ansible_ssh_private_key_file: '~/.vagrant.d/insecure_private_key'
+        ansible_python_interpreter: '/usr/bin/python3'
+        # general vars
+        vm_url: '{{ cookiecutter.box_ip }}'
