@@ -1,6 +1,6 @@
 ## {{ cookiecutter.project_title }}
 
-**Installs {{ cookiecutter.project_title }} in a standalone Vagrant box, though the use of Ansible playbook**
+**Installs {{ cookiecutter.project_title }} in a standalone Vagrant box, though the use of Ansible (2.10) playbook**
 
 
 Requirements to run box:
@@ -36,8 +36,8 @@ After installation process has finished, {{ cookiecutter.project_title }} will b
 
 
 ## Box source structure & files
-* *Vagrant box configuration file*: [Vagrantfile](./Vagrantfile)  --> CREATE
-* *Ansible invetory file* for the Vagrant box: [host_vagrant.yml](./host_vagrant.yml)  --> CREATE
+* *Vagrant box configuration file*: [Vagrantfile](./Vagrantfile)  
+* *Ansible invetory file* for the Vagrant box: [host_vagrant.yml](./host_vagrant.yml)  --> EDIT
 * *Ansible configuration *file: [ansible.cfg](./ansible.cfg)
 * *Ansible entry playbook*: [ansible/playbook.yml](./ansible/playbook.yml)
 * *Ansible roles* directory: [ansible/roles](./ansible/roles) --> create 0_hello_playbook role
