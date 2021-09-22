@@ -3,7 +3,17 @@ Python [cookiecutter](https://cookiecutter.readthedocs.io) library allows for th
 
 This repository uses [cookiecutter](https://cookiecutter.readthedocs.io) to create the structure and essential file to create Vagrant boxes, where a given software setup is automated with Ansible.
 
-
-
+## Running cookie cutter - to create Vagrant box file structure
+* clone repo: `git clone https://github.com/TIBHannover/cookiecutter-for-vagrant-boxes.git`
+* `cd cookiecutter-for-vagrant-boxes` 
 * create a local python3 virtual environment
-* `pip install cocookiecutter`
+* install [cookiecutter](https://cookiecutter.readthedocs.io) python library `pip install cocookiecutter`
+* go to the parent directory: `cd ..` 
+* run the cookiecutter: `cookiecutter-for-vagrant-boxes cookiecutter-for-vagrant-boxes`
+* provide the appropriate values in the values
+* go into the created folder, which will have the same name as the box name: `cd {{ cookiecutter.box_name }}`
+* see the [{{ cookiecutter.box_name }}/README.md]({{ cookiecutter.box_name }}/README.md) for further info on the box source code directory structure
+* start vagrant box `vagrant up` 
+* started editing away the playbook
+
+
