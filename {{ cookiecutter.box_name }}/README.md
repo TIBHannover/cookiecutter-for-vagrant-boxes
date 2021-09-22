@@ -13,10 +13,10 @@ Requirements to run box:
 
 Run the following steps in Terminal (Linux/macOS) or Git Bash (Windows):
 ```bash
-git clone {{ cookiecutter.project_git_repo }} 
-cd openrefine-wikibase-reconciliation-box
+cd {{ cookiecutter.box_name }}
 vagrant up
 ```
+
 After installation process has finished, {{ cookiecutter.project_title }} will be running at 
 * {{ cookiecutter.box_ip }}
 

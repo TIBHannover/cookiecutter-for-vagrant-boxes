@@ -1,6 +1,6 @@
 {
-    "project_title": "",
-    "box_name": "Howdy",
+    "project_title": "Box Long Descriptive Title",
+    "box_name": "boxname (nospaces)",
     "box_ip": "192.168.100.100",
-    "box_ip": "192.168.100.100"
+    "license": ["Apache2.0", "GNU GPL v.3", "MIT"]
 }
