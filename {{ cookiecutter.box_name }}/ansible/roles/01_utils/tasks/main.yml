@@ -16,7 +16,7 @@
 
 - name: 3 Install apt packages
   package:
-    name: "{{ item }}"
+    name: {% raw %}"{{ item }}"{% endraw %}
     state: present
   loop:
     - python3-pip
