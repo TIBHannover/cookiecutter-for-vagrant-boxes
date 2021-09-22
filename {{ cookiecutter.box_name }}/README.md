@@ -40,6 +40,7 @@ After installation process has finished, {{ cookiecutter.project_title }} will b
 * *Ansible invetory file* for the Vagrant box: [host_vagrant.yml](./host_vagrant.yml)
 * *Ansible configuration *file: [ansible.cfg](./ansible.cfg)
 * *Ansible entry playbook*: [ansible/playbook.yml](./ansible/playbook.yml)
-* *Ansible roles* directory: [ansible/roles](./ansible/roles) --> create 0_hello_playbook role
+* *Ansible roles* directory: [ansible/roles](./ansible/roles)
+    * *Ansible 00_utils role main task*: [ansible/roles/01_utils/tasks/main.yml](./ansible/roles/01_utils/tasks/main.yml)
 * *Ansible roles/collections requirements*: [ansible/requirements.yml](./ansible/requirements.yml)
 
