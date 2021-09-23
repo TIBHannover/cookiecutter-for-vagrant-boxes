@@ -9,11 +9,11 @@ This repository uses [cookiecutter](https://cookiecutter.readthedocs.io) to crea
 * create a local python3 virtual environment
 * install [cookiecutter](https://cookiecutter.readthedocs.io) python library `pip install cocookiecutter`
 * go to the parent directory: `cd ..` 
-* run the cookiecutter: `cookiecutter-for-vagrant-boxes cookiecutter-for-vagrant-boxes`
-* provide the appropriate values in the values
+* run the cookiecutter: `cookiecutter cookiecutter-for-vagrant-boxes` to create a new instance from the cookiecutter
+* provide the appropriate values to the questions asked
 * go into the created folder, which will have the same name as the box name: `cd {{ cookiecutter.box_name }}`
 * see the [{{ cookiecutter.box_name }}/README.md]({{ cookiecutter.box_name }}/README.md) for further info on the box source code directory structure
-* start vagrant box `vagrant up` 
+* start vagrant box `vagrant up` - for testing purposes
 * started editing away the playbook
 
 
